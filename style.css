@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{font-family: 'Times New Roman', Times, serif;}
+h4, h5, h6{font-family:'Playfair Display';}
+h6{font-size: 15px; letter-spacing: 4px;font-weight: normal;}
+h5{font-size: 20px; letter-spacing: 4px;font-weight: normal;}
+h4{font-size: 40px; letter-spacing: 4px;font-weight: normal;}
+hr{color: #eee;}
+nav{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px #bbb;
+    position: fixed;
+    z-index: 1;
+}
+nav a{text-decoration: none;display: block;padding: 15px 20px;}
+nav a:link,nav a:visited{color: black;} 
+nav a:hover{background-color: #ccc}
+nav li{
+    float: right;
+    list-style-type: none;
+    padding: 3px;
+}
+nav::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#home{position: relative;}
+#home p{
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 20px;
+    font-size: 40px;
+    color: #555;
+    letter-spacing: 4px;
+}
+.container{width: 75%; margin: auto;}
+.margin{margin-top: 80px; margin-bottom: 80px;padding-top: 50px;}
+.text{
+    float: left;
+    width:49%;
+    padding: 20px 30px;
+}
+.image{
+    float:left;
+    width: 49%;
+    padding: 10px 40px;
+}
+#about::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#menu p{color: #777;}
+#menu p,#menu h4, #menu h5{line-height: 1.5;}
+#menu::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#contact{padding-right: 10px; padding-left: 10px;}
+input{
+    width: 100%;
+    padding:10px 15px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    line-height: 3;
+}
+button{
+    display: block;
+    border: none;
+    padding: 10px 15px;
+    background-color: #eee;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{background-color: #eee;text-align: center;padding: 40px;}
+footer a{color: #000;}
+@media(max-width:1200px){
+    .container{width: 100%;}
+}
+@media(max-width:600px){
+    .hide{display: none;}
+    #home p{
+        margin-top: -40px;
+        font-size: 20px;
+    }
+    .container{width: 100%;}
+    .text{width: 100%; padding: 10px 10px;}
+    .image{width: 100%; padding: 10px 10px;}
+}
